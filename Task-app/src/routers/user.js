@@ -74,6 +74,19 @@ router.get("/users/me", auth, async (req, res) => {
 //   }
 // });
 
+// get user all users
+router.get("/users", async (req, res) => {
+  try {
+    const users = await User.find();
+    if (!users) {
+      return res.status(404).send();
+    }
+    res.send(users);
+  } catch (e) {
+    res.status(500).send(e);
+  }
+});
+
 // update user
 router.patch("/users/me", auth, async (req, res) => {
   const updates = Object.keys(req.body);

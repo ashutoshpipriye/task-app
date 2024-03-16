@@ -1,0 +1,6 @@
+###Get a list of all users
+GET http://localhost:3000/users
+
+
+###Test
+GET http://localhost:3000/

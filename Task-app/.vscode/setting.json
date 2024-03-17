@@ -1,0 +1,9 @@
+{
+  "editor.wordWrap": "on",
+  "workbench.iconTheme": "material-icon-theme",
+  "files.autoSave": "off",
+  "editor.rulers": [
+    120
+  ],
+  "editor.minimap.enabled": true
+}
